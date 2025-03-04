@@ -1,0 +1,89 @@
+/* reset */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+button {
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* variables */
+:root {
+    /* colors */
+    --var: #ffffff;
+
+    /* fonts */
+    --ff-main: 'Times New Roman', Times, serif;
+    --ff-title: 'Times New Roman', Times, serif;
+
+    /* font-sizes */
+    --fz-16: 1rem;
+    --fz-18: 1.125rem;
+    --fz-24: 1.5rem;
+    --fz-32: 2rem;
+    --fz-64: 4rem;
+}
+
+/* general */
+body {
+    background: var(--white);
+    color: var(--black);
+    font-family: var(--ff-main);
+}
+
+#root {
+    min-height: 100vh;
+}
+
+main {
+    padding: 64px 16px 64px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-title);
+}
+
+h1 {
+    font-size: var(--fz-32);
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    font-size: var(--fz-24);
+}
+
+/* utils */
+.center {
+    margin-inline: auto;
+}
+
+.capital {
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 760px) {
+    main {
+        padding: 32px 16px 32px;
+    }
+}
