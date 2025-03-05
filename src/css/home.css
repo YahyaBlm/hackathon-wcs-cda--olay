@@ -5,7 +5,7 @@
     background-image: url(../assets/images/home-sky.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(0.5);
+    filter: brightness(0.6);
     position: absolute;
     z-index: 0;
 }
@@ -23,6 +23,6 @@
         font-family: var(--ff-main);
         font-size: var(--fz-32);
         font-style: italic;
-        padding: 25%;
+        padding: 64px;
     }
 }
