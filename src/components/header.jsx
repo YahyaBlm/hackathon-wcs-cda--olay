@@ -1,11 +1,9 @@
-import React from 'react';
+import '../css/header.css';
 
-const header = () => {
+export default function Header() {
     return (
-        <div>
-            <h1>Header</h1>
-        </div>
+        <header>
+            <h1 className="logo">O L A Y</h1>
+        </header>
     );
-};
-
-export default header;
+}
