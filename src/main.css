@@ -25,11 +25,18 @@ a {
 /* variables */
 :root {
     /* colors */
-    --var: #ffffff;
+    --black: #1C1C1C;
+    --white: #FEFEFE;
+    --grey-dark: #606060;
+    --grey: #E4E4E4;
+    --sea: #689196;
+    --mountain: #AD6B3C;
+    --desert: #D8C3A5;
+    --forest: #9EB05E;
 
     /* fonts */
-    --ff-main: 'Times New Roman', Times, serif;
-    --ff-title: 'Times New Roman', Times, serif;
+    --ff-main: 'Cormorant';
+    --ff-text: 'Montserrat';
 
     /* font-sizes */
     --fz-16: 1rem;
@@ -37,11 +44,11 @@ a {
     --fz-24: 1.5rem;
     --fz-32: 2rem;
     --fz-64: 4rem;
+    --FZ-128: 8rem;
 }
 
 /* general */
 body {
-    background: var(--white);
     color: var(--black);
     font-family: var(--ff-main);
 }
