@@ -11,7 +11,7 @@ export default function Home() {
                 <div>
                     <p>Dream. Travel. Discover.</p>{' '}
                     <p> Disconnect and embark on an adventure in nature to rejuvenate yourself. </p>
-                    <DiscoverButton route={'/landscapes'} />
+                    <DiscoverButton route={'/landscapes'} title={'Discover'} />
                 </div>
             </div>
         </section>
