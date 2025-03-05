@@ -68,6 +68,8 @@ footer > div {
     color: var(--white);
     font-family: var(--ff-text);
     font-size: var(--fz-16);
+    padding: 16px;
+    text-align: center;
 }
 
 .sea-background {
@@ -84,4 +86,20 @@ footer > div {
 
 .forest-background {
     background-color: var(--forest);
+}
+
+@media screen and (max-width: 550px){
+    .discovered-footer {
+        height: 80vh;
+    }
+
+    .footer-link {
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+    }
+
+    .link {
+        font-size: var(--fz-24);
+    }
 }
