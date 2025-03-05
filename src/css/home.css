@@ -25,6 +25,6 @@
         font-family: var(--ff-main);
         font-size: var(--fz-32);
         font-style: italic;
-        padding: 25%;
+        padding: 0 25%;
     }
 }
