@@ -1,1 +1,66 @@
-/* Carousel */
+.card-carousel {
+    display: none;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 32px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    .titre {
+        position: absolute;
+        top: calc(50vh - 80px);
+        font-size: 128px;
+        color: var(--white);
+        font-family: var(--ff-main);
+        font-weight: 200;
+    }
+}
+
+.card-carousel--active {
+    display: flex;
+}
+
+.slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--grey);
+    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0 4px 8px);
+    border-radius: 4px;
+
+    img {
+        width: 100vw;
+    }
+}
+
+.carousel-container {
+    position: relative;
+}
+.prev-btn,
+.next-btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: calc(50vh - 40px);
+}
+.prev-btn {
+    background: none;
+    border: none;
+    left: 16px;
+
+    img {
+        width: 80px;
+    }
+}
+.next-btn {
+    background: none;
+    border: none;
+    right: 16px;
+
+    img {
+        width: 80px;
+    }
+}

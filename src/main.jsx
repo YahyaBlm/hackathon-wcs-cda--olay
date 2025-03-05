@@ -1,7 +1,8 @@
-import { StrictMode } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
+import './main.css';
 import Home from './pages/Home.jsx';
 import Carousel from './pages/carousel.jsx';
 import Discovered from './pages/discovered.jsx';
@@ -35,7 +36,7 @@ const router = createBrowserRouter(
 );
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <StrictMode>
+    <React.StrictMode>
         <RouterProvider router={router} />
-    </StrictMode>
+    </React.StrictMode>
 );
