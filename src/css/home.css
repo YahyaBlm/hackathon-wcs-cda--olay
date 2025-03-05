@@ -5,7 +5,7 @@
     background-image: url(../assets/images/home-sky.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(0.6);
+    filter: brightness(0.5);
     position: absolute;
     z-index: 0;
 }
@@ -23,15 +23,6 @@
         font-family: var(--ff-main);
         font-size: var(--fz-32);
         font-style: italic;
-        padding: 64px;
-    }
-}
-
-@media screen and (max-width: 760px) {
-    .homeTextContent {
-        div {
-            font-size: var(--fz-24);
-            padding: 48px;
-        }
+        padding: 25%;
     }
 }
