@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 export default function DiscoveredFooter({ className }) {
     return (
         <footer className={`discovered-footer ${className}`}>
-            <section className='footer-link'>
+            <section className="footer-link">
                 <div>
-                <Link to="/discovered/sea" className="link">
+                    <Link to="/discovered/sea" className="link">
                         <p>Home</p>
                     </Link>
                     <Link to="/discovered/sea" className="link">

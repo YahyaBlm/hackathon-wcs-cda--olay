@@ -41,13 +41,13 @@ footer > div {
 }
 
 .link::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 0;
-    height: 1px; 
+    height: 1px;
     bottom: 0;
-    left: 0; 
-    background-color: var(--white); 
+    left: 0;
+    background-color: var(--white);
     transition: width 0.8s ease-in-out;
 }
 
@@ -88,7 +88,7 @@ footer > div {
     background-color: var(--forest);
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 550px) {
     .discovered-footer {
         height: 80vh;
     }
