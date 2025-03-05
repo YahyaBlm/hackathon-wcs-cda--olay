@@ -1,5 +1,21 @@
+import { Outlet } from 'react-router-dom';
+
+import DiscoverHeader from '../components/discovered-header';
+import DiscoverFooter from '../components/discovered-footer';
+
+import '../main.css';
 import '../css/discovered.css';
 
-export default function Discovered() {
-    return;
+function App() {
+    return (
+        <>
+            <DiscoverHeader />
+            <main>
+                <Outlet />
+            </main>
+            <DiscoverFooter />
+        </>
+    );
 }
+
+export default App;
