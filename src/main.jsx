@@ -1,8 +1,13 @@
-import { StrictMode } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
+
+import './main.css';
+
+
 import Home from './pages/home.jsx';
+
 import Carousel from './pages/carousel.jsx';
 import DiscoveredSea from './pages/discovered-sea.jsx';
 import Error404 from './pages/error-404.jsx';
@@ -60,7 +65,7 @@ const router = createBrowserRouter(
 );
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <StrictMode>
+    <React.StrictMode>
         <RouterProvider router={router} />
-    </StrictMode>
+    </React.StrictMode>
 );
