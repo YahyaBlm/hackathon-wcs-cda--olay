@@ -1,0 +1,43 @@
+.discovered-header {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo {
+    font-family: var(--ff-logo);
+    font-size: var(--fz-64);
+    color: var(--white);
+    cursor: pointer;
+}
+
+header > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin-bottom: 12px;
+}
+
+.link {
+    color: var(--white);
+    font-size: var(--fz-32);
+    font-family: var(--ff-main);
+}
+
+.sea-background {
+    background-color: var(--sea);
+}
+
+.mountain-background {
+    background-color: var(--mountain);
+}
+
+.desert-background {
+    background-color: var(--desert);
+}
+
+.forest-background {
+    background-color: var(--forest);
+}
