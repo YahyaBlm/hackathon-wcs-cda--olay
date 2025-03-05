@@ -1,6 +1,6 @@
-import React, { Children } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { RouterProvider, createBrowserRouter, redirect } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
 
 const router = createBrowserRouter(
