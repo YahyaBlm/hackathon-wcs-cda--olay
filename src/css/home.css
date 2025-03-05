@@ -26,3 +26,12 @@
         padding: 64px;
     }
 }
+
+@media screen and (max-width: 760px) {
+    .homeTextContent {
+        div {
+            font-size: var(--fz-24);
+            padding: 48px;
+        }
+    }
+}
