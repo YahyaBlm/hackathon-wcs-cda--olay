@@ -53,6 +53,29 @@ a {
     --FZ-128: 8rem;
 }
 
+/* reset */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+button {
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
 /* general */
 body {
     color: var(--black);
@@ -61,10 +84,6 @@ body {
 
 #root {
     min-height: 100vh;
-}
-
-main {
-    padding: 64px 16px 64px;
 }
 
 h1,
