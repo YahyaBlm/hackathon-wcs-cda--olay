@@ -1,1 +1,37 @@
 /* Home */
+.backgroundHome {
+    height: 100svh;
+    width: 100svw;
+    background-image: url(../assets/images/home-sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.6);
+    position: absolute;
+    z-index: 0;
+}
+.homeTextContent {
+    position: absolute;
+    z-index: 1;
+    div {
+        height: 100svh;
+        width: 100svw;
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        font-family: var(--ff-main);
+        font-size: var(--fz-32);
+        font-style: italic;
+        padding: 0 25%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .homeTextContent div {
+        font-size: var(--fz-24);
+        padding: 48px;
+    }
+}

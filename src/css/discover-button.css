@@ -1,0 +1,25 @@
+.button {
+    width: fit-content;
+    padding: 8px 32px;
+    background-color: rgba(254, 254, 254, 0.75);
+    color: var(--grey-dark);
+    font-family: 'Montserrat';
+    font-size: var(--fz-24);
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--white);
+}
+
+@media (max-width: 675px) {
+    .button {
+        font-size: var(--fz-18);
+    }
+
+    .button:hover {
+        background-color: rgba(254, 254, 254, 0.75);
+    }
+}

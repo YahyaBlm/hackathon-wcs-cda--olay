@@ -1,11 +1,14 @@
-import React from 'react';
+import '../css/header.css';
+import { Link } from 'react-router-dom';
 
-const header = () => {
+export default function Header() {
     return (
-        <div>
-            <h1>Header</h1>
-        </div>
+        <header className="header">
+            <Link to="/">
+                <h1 className="logo center" id="logo">
+                    O L A Y
+                </h1>
+            </Link>
+        </header>
     );
-};
-
-export default header;
+}
