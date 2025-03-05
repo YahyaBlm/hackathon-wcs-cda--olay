@@ -10,6 +10,7 @@ import DiscoveredMountain from './pages/discovered-mountain.jsx';
 import DiscoveredDesert from './pages/discovered-desert.jsx';
 import DiscoveredForest from './pages/discovered-forest.jsx';
 import TermsAndConditions from './pages/terms-and-conditions.jsx';
+import PrivacyPolicy from './pages/privacy-policy.jsx';
 
 const router = createBrowserRouter(
     [
@@ -43,6 +44,10 @@ const router = createBrowserRouter(
                 {
                     path: '/terms-and-conditions',
                     element: <TermsAndConditions />,
+                },
+                {
+                    path: '/privacy-policy',
+                    element: <PrivacyPolicy />,
                 },
                 {
                     path: '*',
