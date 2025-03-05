@@ -4,8 +4,11 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
 import Home from './pages/Home.jsx';
 import Carousel from './pages/carousel.jsx';
-import Discovered from './pages/discovered.jsx';
+import DiscoveredSea from './pages/discovered-sea.jsx';
 import Error404 from './pages/error-404.jsx';
+import DiscoveredMountain from './pages/discovered-mountain.jsx';
+import DiscoveredDesert from './pages/discovered-desert.jsx';
+import DiscoveredForest from './pages/discovered-forest.jsx';
 
 const router = createBrowserRouter(
     [
@@ -21,8 +24,20 @@ const router = createBrowserRouter(
                     element: <Carousel />,
                 },
                 {
-                    path: '/discovered',
-                    element: <Discovered />,
+                    path: '/discovered-sea',
+                    element: <DiscoveredSea />,
+                },
+                {
+                    path: '/discovered-mountain',
+                    element: <DiscoveredMountain />,
+                },
+                {
+                    path: '/discovered-desert',
+                    element: <DiscoveredDesert />,
+                },
+                {
+                    path: '/discovered-forest',
+                    element: <DiscoveredForest />,
                 },
                 {
                     path: '*',
