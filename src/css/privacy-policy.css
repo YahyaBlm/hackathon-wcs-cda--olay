@@ -1,0 +1,95 @@
+.privacy-container {
+    font-family: var(--ff-text);
+    color: var(--black);
+    background-color: var(--white);
+    padding: 12rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.privacy-title {
+    font-family: var(--ff-main);
+    font-size: var(--fz-64);
+    color: var(--sea);
+    text-align: center;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.privacy-section {
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.privacy-section h2 {
+    font-family: var(--ff-main);
+    font-size: var(--fz-32);
+    color: var(--mountain);
+    margin-bottom: 1rem;
+}
+
+.privacy-section p {
+    font-size: var(--fz-18);
+    line-height: 1.6;
+    color: var(--grey-dark);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.privacy-section:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.privacy-section:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.privacy-section:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.privacy-section:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.privacy-section:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.privacy-section:nth-child(6) {
+    animation-delay: 0.6s;
+}
+.privacy-section:nth-child(7) {
+    animation-delay: 0.7s;
+}
+.privacy-section:nth-child(8) {
+    animation-delay: 0.8s;
+}
+.contact-link {
+    color: var(--sea);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--mountain);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .privacy-title {
+        font-size: var(--fz-32);
+    }
+
+    .privacy-section h2 {
+        font-size: var(--fz-24);
+    }
+
+    .privacy-section p {
+        font-size: var(--fz-16);
+    }
+}

@@ -50,7 +50,12 @@ export default function TermsAndConditions() {
 
             <section className="terms-section">
                 <h2>8. Contact Us</h2>
-                <p>If you have any questions about these Terms, please contact us.</p>
+                <p>
+                    If you have any questions about these Terms, please{' '}
+                    <a href="mailto:ducksociety@duck.com" className="contact-link">
+                        contact us
+                    </a>
+                </p>
             </section>
         </div>
     );
