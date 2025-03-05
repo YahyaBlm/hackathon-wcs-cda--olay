@@ -8,7 +8,7 @@ import './main.css';
 function App() {
     return (
         <>
-            <Header /> 
+            <Header />
             <main>
                 <Outlet />
             </main>
