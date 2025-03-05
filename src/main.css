@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+
 /* reset */
 *,
 ::before,
@@ -37,6 +42,7 @@ a {
     /* fonts */
     --ff-main: 'Cormorant';
     --ff-text: 'Montserrat';
+    --ff-logo: 'Mansalva';
 
     /* font-sizes */
     --fz-16: 1rem;

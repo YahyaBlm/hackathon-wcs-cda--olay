@@ -1,0 +1,13 @@
+header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    font-family: var(--ff-logo);
+    font-size: var(--fz-64);
+    color: var(--white);
+    margin-top: 24px;
+}
