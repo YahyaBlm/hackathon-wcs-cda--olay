@@ -1,5 +1,10 @@
 import '../css/carousel.css';
 
 export default function Carousel() {
-    return;
+    return (
+        <>
+            // TODO: Add carousel component
+            <h1>carousel</h1>
+        </>
+    );
 }
