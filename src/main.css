@@ -25,6 +25,7 @@ button {
 a {
     color: inherit;
     text-decoration: none;
+    height: fit-content;
 }
 
 /* variables */
@@ -49,6 +50,7 @@ a {
     --fz-18: 1.125rem;
     --fz-24: 1.5rem;
     --fz-32: 2rem;
+    --fz-48: 3rem;
     --fz-64: 4rem;
     --FZ-128: 8rem;
 }

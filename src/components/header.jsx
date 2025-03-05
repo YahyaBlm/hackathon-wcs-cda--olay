@@ -5,7 +5,9 @@ export default function Header() {
     return (
         <header className="header">
             <Link to="/">
-                <h1 className="logo center">O L A Y</h1>
+                <h1 className="logo center" id="logo">
+                    O L A Y
+                </h1>
             </Link>
         </header>
     );

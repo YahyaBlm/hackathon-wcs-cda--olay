@@ -41,3 +41,9 @@ header > div {
 .forest-background {
     background-color: var(--forest);
 }
+
+@media screen and (max-width: 675px) {
+    .link {
+        font-size: var(--fz-18);
+    }
+}

@@ -20,6 +20,8 @@
         flex-direction: column;
         text-align: center;
         justify-content: center;
+        align-items: center;
+        gap: 12px;
         font-family: var(--ff-main);
         font-size: var(--fz-32);
         font-style: italic;

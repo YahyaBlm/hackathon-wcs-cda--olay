@@ -36,7 +36,9 @@ export default function DiscoveredFooter({ className }) {
                     </Link>
                 </div>
             </section>
-            <h1 className="logo center">O L A Y</h1>
+            <h1 className="logo center" id="logo">
+                O L A Y
+            </h1>
             <p className="copy">Copyright © 2025 OLAY • Made with love by Océane • Luc • Alhassane • Yahya</p>
         </footer>
     );
