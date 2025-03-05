@@ -5,6 +5,7 @@
     color: var(--grey-dark);
     font-family: 'Montserrat';
     font-size: var(--fz-24);
+    font-weight: 400;
     border: none;
     cursor: pointer;
 }

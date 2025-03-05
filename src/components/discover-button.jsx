@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../css/discover-button.css';
 
-const DiscoverButton = ({ route }) => {
+const DiscoverButton = ({ route, title }) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
@@ -11,7 +11,7 @@ const DiscoverButton = ({ route }) => {
 
     return (
         <button className="button" onClick={handleClick}>
-            Discover
+            {title}
         </button>
     );
 };
