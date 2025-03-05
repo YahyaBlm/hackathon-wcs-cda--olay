@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 export default function DiscoveredHeader({ className }) {
     return (
         <header className={`discovered-header ${className}`}>
-            <h1 className="logo center">O L A Y</h1>
+            <h1 className="logo center" id="logo">
+                O L A Y
+            </h1>
             <div>
                 <Link to="/discovered/sea" className="link">
                     <p>Sea</p>
