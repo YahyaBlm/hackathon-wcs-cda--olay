@@ -9,6 +9,7 @@ import Error404 from './pages/error-404.jsx';
 import DiscoveredMountain from './pages/discovered-mountain.jsx';
 import DiscoveredDesert from './pages/discovered-desert.jsx';
 import DiscoveredForest from './pages/discovered-forest.jsx';
+import TermsAndConditions from './pages/terms-and-conditions.jsx';
 
 const router = createBrowserRouter(
     [
@@ -38,6 +39,10 @@ const router = createBrowserRouter(
                 {
                     path: '/discovered-forest',
                     element: <DiscoveredForest />,
+                },
+                {
+                    path: '/terms-and-conditions',
+                    element: <TermsAndConditions />,
                 },
                 {
                     path: '*',
