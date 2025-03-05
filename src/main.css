@@ -25,14 +25,14 @@ a {
 /* variables */
 :root {
     /* colors */
-    --black: #1C1C1C;
-    --white: #FEFEFE;
+    --black: #1c1c1c;
+    --white: #fefefe;
     --grey-dark: #606060;
-    --grey: #E4E4E4;
+    --grey: #e4e4e4;
     --sea: #689196;
-    --mountain: #AD6B3C;
-    --desert: #D8C3A5;
-    --forest: #9EB05E;
+    --mountain: #ad6b3c;
+    --desert: #d8c3a5;
+    --forest: #9eb05e;
 
     /* fonts */
     --ff-main: 'Cormorant';
