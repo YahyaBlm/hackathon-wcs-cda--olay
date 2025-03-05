@@ -1,5 +1,16 @@
 import '../css/home.css';
+import DiscoverButton from '../components/discover-button';
 
 export default function Home() {
-    return;
+    return (
+        <section className="homeSection">
+            <div className="backgroundHome"> </div>
+            <div className="homeTextContent">
+                <div>
+                    <p>Dream. Travel. Discover.</p>{' '}
+                    <p> Disconnect and embark on an adventure in nature to rejuvenate yourself. </p>
+                </div>
+            </div>
+        </section>
+    );
 }

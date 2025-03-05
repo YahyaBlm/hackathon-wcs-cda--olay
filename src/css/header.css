@@ -9,5 +9,6 @@
     font-family: var(--ff-logo);
     font-size: var(--fz-64);
     color: var(--white);
+    margin-top: 24px;
     cursor: pointer;
 }

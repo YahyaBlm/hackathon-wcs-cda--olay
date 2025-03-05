@@ -1,8 +1,6 @@
 import { Outlet } from 'react-router-dom';
 
 import Header from './components/header';
-import DiscoverFooter from './components/discovered-footer';
-
 import './main.css';
 
 function App() {
@@ -12,8 +10,6 @@ function App() {
             <main>
                 <Outlet />
             </main>
-            <DiscoverFooter className={'sea-background'} />
-
         </>
     );
 }
