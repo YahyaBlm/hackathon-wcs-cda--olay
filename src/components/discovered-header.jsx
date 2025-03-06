@@ -8,19 +8,19 @@ export default function DiscoveredHeader({ className }) {
                 O L A Y
             </h1>
             <div>
-                <Link to="/discovered/sea" className="link">
+                <Link to="/discovered-sea" className="link">
                     <p>Sea</p>
                 </Link>
 
-                <Link to="/discovered/mountain" className="link">
+                <Link to="/discovered-mountain" className="link">
                     <p>Mountain</p>
                 </Link>
 
-                <Link to="/discovered/desert" className="link">
+                <Link to="/discovered-desert" className="link">
                     <p>Desert</p>
                 </Link>
 
-                <Link to="/discovered/forest" className="link">
+                <Link to="/discovered-forest" className="link">
                     <p>Forest</p>
                 </Link>
             </div>
