@@ -5,7 +5,7 @@ import './main.css';
 function App() {
     return (
         <>
-            <main>
+            <main style={{ backgroundColor: '#e4e4e48f' }}>
                 <Outlet />
             </main>
         </>

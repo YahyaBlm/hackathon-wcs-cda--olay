@@ -1,3 +1,5 @@
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'framer-motion';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../css/discover-button.css';
@@ -10,9 +12,9 @@ const DiscoverButton = ({ route, title }) => {
     };
 
     return (
-        <button className="button" onClick={handleClick}>
+        <motion.button className="button" onClick={handleClick} whileTap={{ scale: 0.9 }}>
             {title}
-        </button>
+        </motion.button>
     );
 };
 

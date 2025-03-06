@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
-
+/* eslint-disable no-unused-vars */
+import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import PrevBtn from '../assets/icons/chevron-left.png';
 import NextBtn from '../assets/icons/chevron-right.png';
 import '../css/carousel.css';
@@ -57,15 +58,18 @@ export default function Carousel() {
                 <div className="slide">
                     {images.map((myImage, index) => {
                         return (
-                            <div
+                            <motion.div
                                 className={`card-carousel ${index === slideIndex ? 'card-carousel--active' : ''}`}
                                 key={index}
+                                initial={{ opacity: 0, scale: 0.7 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.7 }}
                             >
                                 <img src={myImage.img} alt={myImage} className="" />
                                 <h3 className="titre">{myImage.title}</h3>
 
                                 <DiscoverButton route={myImage.route} title="Discover" />
-                            </div>
+                            </motion.div>
                         );
                     })}
                 </div>
