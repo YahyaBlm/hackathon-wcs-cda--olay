@@ -1,1 +1,56 @@
 /* Discovered */
+.desert-destionations {
+    height: 100%;
+    width: 100%;
+}
+
+.destinations-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+}
+
+.destination-info {
+    position: absolute;
+    z-index: 1;
+    bottom: 50svh;
+    color: white;
+    padding-left: 2rem;
+}
+
+@media (max-width: 1075px) {
+    .destinations-list {
+        gap: 20;
+    }
+    article.destination-card {
+        background: none !important;
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+    }
+    .destination-image {
+        /* width: 100px;
+		height: 200px;
+		object-fit: cover; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* width: 100%;
+		height: 100%; */
+        object-fit: cover;
+    }
+    .destination-info {
+        bottom: 70svh;
+        font-size: var(--fz-16);
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .destinations-list {
+        flex-direction: column;
+        /* width: auto;
+		height: auto; */
+    }
+}
