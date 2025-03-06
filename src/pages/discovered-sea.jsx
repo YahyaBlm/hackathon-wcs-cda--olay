@@ -9,7 +9,7 @@ import DiscoveredFooter from '../components/discovered-footer';
 import DiscoveredHeader from '../components/discovered-header';
 
 export default function DiscoveredSea() {
-    const seaDestinations = destinationsList.filter((dest) => dest.name.startsWith('mountain'));
+    const seaDestinations = destinationsList.filter((dest) => dest.name.startsWith('sea'));
     return (
         <>
             <DiscoveredHeader className={'sea-background'} />
