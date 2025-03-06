@@ -1,23 +1,3 @@
-// import { Outlet } from 'react-router-dom';
-
-// import { destinationsList } from '../data/destinations-list';
-
-// import '../css/discovered-desert.css';
-// import DiscoveredFooter from '../components/discovered-footer';
-// import DiscoveredHeader from '../components/discovered-header';
-
-// export default function DiscoveredDesert() {
-//     return (
-//         <>
-//             <DiscoveredHeader className={'desert-background'} />
-//             <main>
-//                 <Outlet />
-//             </main>
-//             <DiscoveredFooter className={'desert-background'} />
-//         </>
-//     );
-// }
-// import { Outlet } from 'react-router-dom';
 import { destinationsList } from '../data/destinations-list';
 import '../css/discovered-desert.css';
 import DiscoveredFooter from '../components/discovered-footer';
