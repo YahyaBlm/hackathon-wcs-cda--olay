@@ -28,7 +28,7 @@
 .card-carousel .titre {
     position: absolute;
     top: calc(50vh - 80px);
-    font-size: 128px;
+    font-size: var(--fz-128);
     color: var(--white);
     font-family: var(--ff-main);
     font-weight: 200;
@@ -36,8 +36,8 @@
 
 .card-carousel .titre {
     @media (max-width: 675px) {
-        font-size: var(--fz-64);
-        top: calc(50vh - 60px);
+        font-size: var(--fz-48);
+        top: calc(50vh + 50px);
     }
 }
 
