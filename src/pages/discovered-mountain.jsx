@@ -14,7 +14,7 @@ export default function DiscoveredMountain() {
             <DiscoveredHeader className={'mountain-background'} />
             <main className="main-forest">
                 <h2 className="discover-title">Mountain</h2>
-                <p>Blablabla... lorem ipsum dolor etc...</p>
+                <p>"Escape to the towering peaks, where the crisp air and endless skies set your spirit free."</p>
                 <div className="destination-list">
                     {mountainDestinations.map((destination, index) => (
                         <DiscoveredCard

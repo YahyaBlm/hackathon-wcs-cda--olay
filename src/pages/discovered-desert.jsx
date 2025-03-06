@@ -14,7 +14,9 @@ export default function DiscoveredDesert() {
             <DiscoveredHeader className={'desert-background'} />
             <main className="main-forest">
                 <h2 className="discover-title">Desert</h2>
-                <p>Blablabla... lorem ipsum dolor etc...</p>
+                <p>
+                    "Lose yourself in the endless dunes, where the silence of the desert whispers peace to your soul."
+                </p>
                 <div className="destination-list">
                     {desertDestinations.map((destination, index) => (
                         <DiscoveredCard
