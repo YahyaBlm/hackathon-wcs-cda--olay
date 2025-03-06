@@ -1,1 +1,30 @@
 /* Discovered */
+
+.main-forest {
+    background-color: #e4e4e48f;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 16px;
+}
+
+.main-forest > p {
+    font-size: var(--fz-24);
+    margin-bottom: 16px;
+}
+
+.discover-title {
+    font-family: var(--ff-main);
+    font-size: var(--fz-64);
+    font-weight: 300;
+}
+
+.destination-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    flex-wrap: wrap;
+}
