@@ -5,7 +5,6 @@ import '../css/discovered-forest.css';
 import DiscoveredFooter from '../components/discovered-footer';
 import DiscoveredHeader from '../components/discovered-header';
 import DiscoveredCard from '../components/discovered-card';
-import Img from '../assets/images/forest.jpg';
 
 export default function DiscoveredForest() {
     const forestDestinations = destinationsList.filter((dest) => dest.name.startsWith('forest'));
@@ -19,10 +18,10 @@ export default function DiscoveredForest() {
                     serenity."
                 </p>
                 <div className="destination-list">
-                    {forestDestinations.map((destination, index) => (
+                    {forestDestinations.map((destination) => (
                         <DiscoveredCard
-                            key={index}
-                            img={Img}
+                            key={destination.id}
+                            img={destination.imgSrc}
                             city={destination.location}
                             description={destination.description}
                         />

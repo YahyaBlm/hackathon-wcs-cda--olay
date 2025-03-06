@@ -4,7 +4,6 @@ import { destinationsList } from '../data/destinations-list';
 import DiscoveredFooter from '../components/discovered-footer';
 import DiscoveredHeader from '../components/discovered-header';
 import DiscoveredCard from '../components/discovered-card';
-import Img from '../assets/images/forest.jpg';
 
 export default function DiscoveredDesert() {
     const desertDestinations = destinationsList.filter((dest) => dest.name.startsWith('desert'));
@@ -17,10 +16,10 @@ export default function DiscoveredDesert() {
                     "Lose yourself in the endless dunes, where the silence of the desert whispers peace to your soul."
                 </p>
                 <div className="destination-list">
-                    {desertDestinations.map((destination, index) => (
+                    {desertDestinations.map((destination) => (
                         <DiscoveredCard
-                            key={index}
-                            img={Img}
+                            key={destination.id}
+                            img={destination.imgSrc}
                             city={destination.location}
                             description={destination.description}
                         />

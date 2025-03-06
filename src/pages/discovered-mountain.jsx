@@ -4,7 +4,6 @@ import { destinationsList } from '../data/destinations-list';
 import DiscoveredFooter from '../components/discovered-footer';
 import DiscoveredHeader from '../components/discovered-header';
 import DiscoveredCard from '../components/discovered-card';
-import Img from '../assets/images/forest.jpg';
 
 export default function DiscoveredMountain() {
     const mountainDestinations = destinationsList.filter((dest) => dest.name.startsWith('mountain'));
@@ -15,10 +14,10 @@ export default function DiscoveredMountain() {
                 <h2 className="discover-title">Mountain</h2>
                 <p>"Escape to the towering peaks, where the crisp air and endless skies set your spirit free."</p>
                 <div className="destination-list">
-                    {mountainDestinations.map((destination, index) => (
+                    {mountainDestinations.map((destination) => (
                         <DiscoveredCard
-                            key={index}
-                            img={Img}
+                            key={destination.id}
+                            img={destination.imgSrc}
                             city={destination.location}
                             description={destination.description}
                         />

@@ -4,10 +4,9 @@ import { destinationsList } from '../data/destinations-list';
 import DiscoveredFooter from '../components/discovered-footer';
 import DiscoveredHeader from '../components/discovered-header';
 import DiscoveredCard from '../components/discovered-card';
-import Img from '../assets/images/forest.jpg';
 
 export default function DiscoveredSea() {
-    const seaDestinations = destinationsList.filter((dest) => dest.name.startsWith('mountain'));
+    const seaDestinations = destinationsList.filter((dest) => dest.name.startsWith('sea'));
     return (
         <>
             <DiscoveredHeader className={'sea-background'} />
@@ -18,10 +17,10 @@ export default function DiscoveredSea() {
                     world."
                 </p>
                 <div className="destination-list">
-                    {seaDestinations.map((destination, index) => (
+                    {seaDestinations.map((destination) => (
                         <DiscoveredCard
-                            key={index}
-                            img={Img}
+                            key={destination.id}
+                            img={destination.imgSrc}
                             city={destination.location}
                             description={destination.description}
                         />
