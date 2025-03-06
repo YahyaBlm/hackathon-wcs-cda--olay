@@ -16,11 +16,11 @@
     font-family: var(--ff-main);
     font-size: var(--fz-64);
     color: var(--white);
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 @media (max-width: 675px) {
     .container-404 > h1 {
-        font-size: var(--fz-32);
+        font-size: var(--fz-48);
     }
 }

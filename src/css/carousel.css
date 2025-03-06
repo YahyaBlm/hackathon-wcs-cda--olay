@@ -1,82 +1,83 @@
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
 .card-carousel {
-    display: none;
-    justify-content: space-around;
-    flex-direction: row-reverse;
-    align-items: flex-start;
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 32px;
     height: 100vh;
-    overflow: hidden;
     position: relative;
-
-    .titre {
-        position: absolute;
-        top: calc(50vh - 80px);
-        font-size: 128px;
-        color: var(--white);
-        font-family: var(--ff-main);
-        font-weight: 200;
-
-        @media (max-width: 675px) {
-            font-size: var(--fz-64);
-            top: calc(50vh - -70px);
-        }
-    }
 }
 
 .card-carousel--active {
     display: flex;
 }
 
-.slide {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--grey);
-    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0 4px 8px);
-    border-radius: 4px;
+.card-carousel .titre {
+    position: absolute;
+    top: calc(50vh - 80px);
+    font-size: 128px;
+    color: var(--white);
+    font-family: var(--ff-main);
+    font-weight: 200;
+}
 
-    img {
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-        object-position: center;
+.card-carousel .titre {
+    @media (max-width: 675px) {
+        font-size: var(--fz-64);
+        top: calc(50vh - 60px);
     }
 }
 
-.carousel-container {
-    position: relative;
+.slide img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
 }
+
 .prev-btn,
 .next-btn {
     display: block;
     cursor: pointer;
     position: absolute;
     top: calc(50vh - 40px);
-}
-.prev-btn {
     background: none;
     border: none;
+}
+
+.prev-btn {
     left: 16px;
+}
 
-    img {
-        width: 80px;
+.prev-btn img {
+    width: 80px;
 
-        @media (max-width: 675px) {
-            width: 46px;
-        }
+    @media (max-width: 675px) {
+        width: 46px;
     }
 }
+
 .next-btn {
-    background: none;
-    border: none;
     right: 16px;
+}
 
-    img {
-        width: 80px;
+.next-btn img {
+    width: 80px;
 
-        @media (max-width: 675px) {
-            width: 46px;
-        }
+    @media (max-width: 675px) {
+        width: 46px;
     }
 }
