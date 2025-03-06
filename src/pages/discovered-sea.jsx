@@ -30,7 +30,7 @@ const seaData = [
     },
 ];
 export default function DiscoveredSea() {
-    const seaDestinations = destinationsList.filter((dest) => dest.name.startsWith('mountain'));
+
 
     const [selectedDestinationIndex, setSelectedDestinationIndex] = useState(null);
 
@@ -38,6 +38,9 @@ export default function DiscoveredSea() {
         console.log('got it');
         setSelectedDestinationIndex(index);
     };
+
+    const seaDestinations = destinationsList.filter((dest) => dest.name.startsWith('sea'));
+
     return (
         <>
             <DiscoveredHeader className={'sea-background'} />

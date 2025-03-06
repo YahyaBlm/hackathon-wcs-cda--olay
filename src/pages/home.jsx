@@ -18,7 +18,7 @@ export default function Home() {
                 <div>
                     <p>Dream. Travel. Discover.</p>{' '}
                     <p> Disconnect and embark on an adventure in nature to rejuvenate yourself. </p>
-                    <DiscoverButton route={'/landscapes'} title={'Discover'} />
+                    <DiscoverButton route={'/landscapes'} title={'Explore'} />
                 </div>
             </motion.div>
         </section>
