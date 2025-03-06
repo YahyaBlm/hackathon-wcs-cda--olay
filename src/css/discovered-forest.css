@@ -13,6 +13,8 @@
 .main-forest > p {
     font-size: var(--fz-24);
     margin-bottom: 16px;
+    text-align: center;
+    font-style: italic;
 }
 
 .discover-title {
@@ -27,4 +29,14 @@
     justify-content: center;
     gap: 5%;
     flex-wrap: wrap;
+}
+
+@media (max-width: 675px) {
+    .discover-title {
+        font-size: var(--fz-48);
+    }
+
+    .main-forest > p {
+        font-size: var(--fz-18);
+    }
 }

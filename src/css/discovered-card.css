@@ -66,3 +66,9 @@
     bottom: 2%;
     left: 2%;
 }
+
+@media (max-width: 675px) {
+    .description {
+        font-size: var(--fz-24);
+    }
+}

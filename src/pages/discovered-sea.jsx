@@ -14,7 +14,10 @@ export default function DiscoveredSea() {
             <DiscoveredHeader className={'sea-background'} />
             <main className="main-forest">
                 <h2 className="discover-title">Sea</h2>
-                <p>Blablabla... lorem ipsum dolor etc...</p>
+                <p>
+                    "Drift away with the rhythm of the waves, where the horizon stretches beyond the worries of the
+                    world."
+                </p>
                 <div className="destination-list">
                     {seaDestinations.map((destination, index) => (
                         <DiscoveredCard

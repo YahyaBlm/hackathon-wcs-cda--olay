@@ -14,7 +14,10 @@ export default function DiscoveredForest() {
             <DiscoveredHeader className={'forest-background'} />
             <main className="main-forest">
                 <h2 className="discover-title">Forest</h2>
-                <p>Blablabla... lorem ipsum dolor etc...</p>
+                <p>
+                    "Disappear into the heart of the forest, where the whispering trees guard the secrets of true
+                    serenity."
+                </p>
                 <div className="destination-list">
                     {forestDestinations.map((destination, index) => (
                         <DiscoveredCard
