@@ -8,24 +8,30 @@ import Desert from '../assets/images/desert.jpg';
 import Forest from '../assets/images/forest.jpg';
 import Mountain from '../assets/images/mountain.jpg';
 import Sea from '../assets/images/sea.jpg';
+import DiscoverButton from '../components/discover-button';
+import Header from '../components/header';
 import '../css/carousel.css';
 
 const images = [
     {
         img: Sea,
         title: 'Sea',
+        route: '/discovered-sea',
     },
     {
         img: Desert,
         title: 'Desert',
+        route: '/discovered-desert',
     },
     {
         img: Forest,
         title: 'Forest',
+        route: '/discovered-forest',
     },
     {
         img: Mountain,
         title: 'Mountain',
+        route: '/discovered-mountain',
     },
 ];
 
@@ -42,6 +48,7 @@ export default function Carousel() {
 
     return (
         <>
+            <Header />
             <div className="carousel-container">
                 <div className="slide">
                     {images.map((myImage, index) => {
@@ -52,6 +59,8 @@ export default function Carousel() {
                             >
                                 <img src={myImage.img} alt={myImage} className="" />
                                 <h3 className="titre">{myImage.title}</h3>
+
+                                <DiscoverButton route={myImage.route} title="Discover" />
                             </div>
                         );
                     })}

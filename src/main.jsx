@@ -5,7 +5,6 @@ import App from './App.jsx';
 
 import './main.css';
 
-
 import Home from './pages/home.jsx';
 
 import Carousel from './pages/carousel.jsx';
