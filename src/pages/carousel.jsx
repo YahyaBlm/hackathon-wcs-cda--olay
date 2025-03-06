@@ -10,13 +10,17 @@ import Mountain from '../assets/images/mountain.jpg';
 import Sea from '../assets/images/sea.jpg';
 import DiscoverButton from '../components/discover-button';
 import Header from '../components/header';
-import '../css/carousel.css';
 
 const images = [
     {
         img: Sea,
         title: 'Sea',
         route: '/discovered-sea',
+    },
+    {
+        img: Mountain,
+        title: 'Mountain',
+        route: '/discovered-mountain',
     },
     {
         img: Desert,
@@ -27,11 +31,6 @@ const images = [
         img: Forest,
         title: 'Forest',
         route: '/discovered-forest',
-    },
-    {
-        img: Mountain,
-        title: 'Mountain',
-        route: '/discovered-mountain',
     },
 ];
 

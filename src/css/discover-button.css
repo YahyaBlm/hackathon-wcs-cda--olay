@@ -8,6 +8,8 @@
     font-weight: 400;
     border: none;
     cursor: pointer;
+    position: absolute;
+    top: 65%;
 }
 
 .button:hover {
