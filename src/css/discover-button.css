@@ -19,6 +19,7 @@
 @media (max-width: 675px) {
     .button {
         font-size: var(--fz-18);
+        top: 78%;
     }
 
     .button:hover {
