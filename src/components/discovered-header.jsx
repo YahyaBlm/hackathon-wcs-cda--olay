@@ -1,5 +1,5 @@
-import '../css/discovered-header.css';
 import { Link } from 'react-router-dom';
+import '../css/discovered-header.css';
 
 export default function DiscoveredHeader({ className }) {
     return (
