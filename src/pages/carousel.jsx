@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import PrevBtn from '../assets/icons/chevron-left.png';
 import NextBtn from '../assets/icons/chevron-right.png';
@@ -38,12 +38,17 @@ export default function Carousel() {
     const [slideIndex, setSlideIndex] = useState(0);
 
     const prevSlide = () => {
-        setSlideIndex((slideIndex) => (slideIndex > 0 ? slideIndex - 1 : 3));
+        setSlideIndex((slideIndex) => (slideIndex > 0 ? slideIndex - 1 : images.length - 1));
     };
 
     const nextSlide = () => {
-        setSlideIndex((slideIndex) => (slideIndex < 3 ? slideIndex + 1 : 0));
+        setSlideIndex((slideIndex) => (slideIndex < images.length - 1 ? slideIndex + 1 : 0));
     };
+
+    useEffect(() => {
+        const offset = -slideIndex * 100;
+        document.querySelector('.slide').style.transform = `translateX(${offset}%)`;
+    }, [slideIndex]);
 
     return (
         <>
