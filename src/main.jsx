@@ -1,11 +1,20 @@
-import { StrictMode } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
-import Home from './pages/Home.jsx';
+
+import './main.css';
+
+import Home from './pages/home.jsx';
+
 import Carousel from './pages/carousel.jsx';
-import Discovered from './pages/discovered.jsx';
+import DiscoveredSea from './pages/discovered-sea.jsx';
 import Error404 from './pages/error-404.jsx';
+import DiscoveredMountain from './pages/discovered-mountain.jsx';
+import DiscoveredDesert from './pages/discovered-desert.jsx';
+import DiscoveredForest from './pages/discovered-forest.jsx';
+import TermsAndConditions from './pages/terms-and-conditions.jsx';
+import PrivacyPolicy from './pages/privacy-policy.jsx';
 
 const router = createBrowserRouter(
     [
@@ -21,8 +30,28 @@ const router = createBrowserRouter(
                     element: <Carousel />,
                 },
                 {
-                    path: '/discovered',
-                    element: <Discovered />,
+                    path: '/discovered-sea',
+                    element: <DiscoveredSea />,
+                },
+                {
+                    path: '/discovered-mountain',
+                    element: <DiscoveredMountain />,
+                },
+                {
+                    path: '/discovered-desert',
+                    element: <DiscoveredDesert />,
+                },
+                {
+                    path: '/discovered-forest',
+                    element: <DiscoveredForest />,
+                },
+                {
+                    path: '/terms-and-conditions',
+                    element: <TermsAndConditions />,
+                },
+                {
+                    path: '/privacy-policy',
+                    element: <PrivacyPolicy />,
                 },
                 {
                     path: '*',
@@ -35,7 +64,7 @@ const router = createBrowserRouter(
 );
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <StrictMode>
+    <React.StrictMode>
         <RouterProvider router={router} />
-    </StrictMode>
+    </React.StrictMode>
 );

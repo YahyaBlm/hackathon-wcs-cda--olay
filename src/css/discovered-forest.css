@@ -1,0 +1,41 @@
+/* Discovered */
+
+.main-forest {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 16px;
+}
+
+.main-forest > p {
+    font-size: var(--fz-24);
+    margin-bottom: 16px;
+    text-align: center;
+    font-style: italic;
+}
+
+.discover-title {
+    font-family: var(--ff-main);
+    font-size: var(--fz-64);
+    font-weight: 300;
+}
+
+.destination-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 675px) {
+    .discover-title {
+        font-size: var(--fz-48);
+    }
+
+    .main-forest > p {
+        font-size: var(--fz-18);
+    }
+}
